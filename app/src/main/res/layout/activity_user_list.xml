@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#c0d6c0">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/textViewUserListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktif Kullanıcılar"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Kullanıcı Listesi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewUserListTitle"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:elevation="4dp"
+        android:layout_margin="8dp"
+        android:outlineProvider="bounds"/>
+</RelativeLayout>

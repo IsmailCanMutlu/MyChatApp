@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0d6c0">
+
+    <!-- Uygulama Başlığı -->
+    <TextView
+        android:id="@+id/textViewMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Chat App"
+        android:textSize="34sp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"/>
+
+    <!-- Giriş Yap Butonu -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/textViewMainTitle"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="40dp"
+        android:elevation="4dp"/>
+
+    <!-- Kayıt Ol Butonu -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp"/>
+</RelativeLayout>
